@@ -85,23 +85,5 @@ print(top5)
 scores.extend([52,69])
 print(scores)
 
-scores.append([123,44])
+scores.append(123)
 print(scores)
-
-
-#튜플은 ()로 이용함 , 튜플은 그 값을 변화 시킬수 없다. 갱신 불가능!!!! (리스트와 차이점)
-
-t1 = ()
-t2 = (1,)
-t3 = (1)
-t4 = (1,2,3)
-t5 = 1,2,3
-t6 = ('a','b',('ab','cd'))
-
-print(t1)
-print(t2)
-print(t3)
-print(t4)
-print(t5)
-print(t6)
-#튜플도 인덱싱 가능 t[1]      슬라이싱, 연산 가능  !!   BUT!!  변경 연산 하면 에러난다잉
