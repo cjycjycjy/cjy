@@ -57,13 +57,16 @@ s = """
 #print(jjjj['detail']['last'])
 #print(jjjj['detail'])
 
+
+######################################################  .으로 엑세스 할수 있게 바꿔보자
 class JsonObject:
     def __init__(self,d):
-        self.__dict__ = d
+        self.__dict__ = d           ## json을 dictionary 형태로 저장
     
+data = json.loads(s,object_hook = JsonObject)     
+ ## loads 할때 JsonObject클래스를 통해서 읽어오겠다!  hooking정보 입력
+print(data.name) 
 
-data = json.loads(s,object_hook = JsonObject)
-print(data.name)
-
+#####################################################
 
 
